@@ -1,13 +1,17 @@
-fastapi-parquet-app/
+fastapi_parquet_app/
 ├── app/
 │   ├── main.py
 │   ├── utils.py
-│   ├── ...
-├── data/
-│   └── (user folders + files go here)
-├── Dockerfile
+│   └── storage/
+│       └── user_{user_id}/
+│           ├── files.parquet
+│           └── projects/
+│               └── {project_name}/
+│                   ├── {project_name}.pdf
+│                   ├── {project_name}_updated.json
+│                   └── {project_name}_updated.txt
 ├── requirements.txt
-└── .env
+└── README.md
 
 
 # Use official Python image
